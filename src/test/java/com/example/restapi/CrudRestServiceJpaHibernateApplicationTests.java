@@ -27,42 +27,42 @@ import com.example.restapi.service.StudentService;
 import com.sun.glass.ui.Application;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+//@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 //@WebMvcTest(StudentController.class)
-@AutoConfigureMockMvc
+//@AutoConfigureMockMvc
 public class CrudRestServiceJpaHibernateApplicationTests {
 	/*
 	 * @Autowired private TestRestTemplate restTemplate;
 	 */
 
-	@Autowired
-	private MockMvc mockMvc;
-
-	@MockBean
-	private StudentService studentService;
-
+//	@Autowired
+//	private MockMvc mockMvc;
+//
+//	@MockBean
+//	private StudentService studentService;
+//
 //	@LocalServerPort
 //	private int port;
-
+//
 //	private String getRootUrl() {
 //		return "http://localhost:" + port;
 //	}
 
-	@Test
-	public void contextLoads() {
-	}
+//	@Test
+//	public void contextLoads() {
+//	}
 
-	@Test
-	public void testGetAllStudents() throws Exception {
-
-		this.mockMvc.perform(get("/students")).andDo(print()).andExpect(status().isOk());
+//	@Test
+//	public void testGetAllStudents() throws Exception {
+//
+//		this.mockMvc.perform(get("/students")).andDo(print()).andExpect(status().isOk());
 
 //		HttpHeaders headers = new HttpHeaders();
 //		HttpEntity<String> entity = new HttpEntity<String>(null, headers);
 //		ResponseEntity<String> response = restTemplate.exchange(getRootUrl()+"/students",
 //				HttpMethod.GET, entity, String.class);
 //		assertNotNull(response.getBody());
-	}
+//	}
 //	
 //	@Test
 //	public void testGetStudentById() {
